@@ -2,8 +2,7 @@
 
 public static class DayOneInput
 {
-    public const string DayOneInputString = @"
-6669
+    public const string DayOneInputString = @"6669
 6434
 6564
 1032
@@ -2268,6 +2267,5 @@ public static class DayOneInput
 3567
 1159
 1136
-2883
-";
+2883";
 }

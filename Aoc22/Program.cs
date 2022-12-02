@@ -1,7 +1,7 @@
 ﻿using Aoc22;
 using Aoc22.DayOne;
+using Aoc22.DayTwo;
 
 Console.WriteLine("Hello, World!");
-Console.WriteLine(DayOne.GetDayOnePartOne(DayOneInput.DayOneInputString));
-Console.WriteLine(DayOne.GetDayOnePartTwo(DayOneInput.DayOneInputString));
+
 Console.WriteLine("Jobs Done!");

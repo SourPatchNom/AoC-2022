@@ -1,13 +1,13 @@
 ﻿namespace Aoc22.DayOne;
 
-public static class DayOne
+public class DayOne
 {
     /// <summary>
     /// Processes the Advent of Code 2022 day one input string and returns the highest calorie sum.
     /// </summary>
     /// <param name="input">String from a text file with lines containing calorie totals for food carried by an elf. Each line represents a unique food item held by an elf. Many elves are represented and elves are seperated by empty line.</param>
     /// <returns>The highest total calories carried by an elf.</returns>
-    public static int GetDayOnePartOne(string input)
+    public int GetDayOnePartOne(string input)
     {
         var max = 0;
         var reader = new StringReader(input);
@@ -36,7 +36,7 @@ public static class DayOne
     /// </summary>
     /// <param name="input">String from a text file with lines containing calorie totals for food carried by an elf. Each line represents a unique food item held by an elf. Many elves are represented and elves are seperated by empty line.</param>
     /// <returns>The highest total calories carried by an elf.</returns>
-    public static int GetDayOnePartTwo(string input)
+    public int GetDayOnePartTwo(string input)
     {
         var totals = new List<int>();
         var reader = new StringReader(input);
