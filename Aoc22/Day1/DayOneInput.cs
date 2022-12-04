@@ -1,4 +1,4 @@
-﻿namespace Aoc22;
+﻿namespace Aoc22.Day1;
 
 public static class DayOneInput
 {

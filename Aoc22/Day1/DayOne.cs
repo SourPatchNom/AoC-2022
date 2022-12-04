@@ -1,4 +1,4 @@
-﻿namespace Aoc22.DayOne;
+﻿namespace Aoc22.Day1;
 
 public class DayOne
 {
