@@ -1,11 +1,10 @@
-﻿using Aoc22;
-using Aoc22.Day3;
-using Aoc22.Day4;
-using Aoc22.Day5;
+﻿
+using Aoc22.Day7;
 
-DayFive day = new DayFive(); 
+DaySeven day = new DaySeven(); 
 
 Console.WriteLine("Hello, World!");
-Console.WriteLine(day.GetPartOne());
-Console.WriteLine(day.GetPartTwo());
+Console.WriteLine(day.GetPartOne(DaySevenInput.Value));
+Console.WriteLine(day.GetPartTwo(DaySevenInput.Value));
 Console.WriteLine("Jobs Done!");
+Console.ReadLine();

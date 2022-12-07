@@ -1,5 +1,9 @@
 ﻿namespace Aoc22.Day5;
 
+/// <summary>
+/// JDTMRWCQJ
+/// VHJDDCWRD
+/// </summary>
 public class DayFive
 {
     /// <summary>
@@ -17,46 +21,8 @@ public class DayFive
             if (lineText == "") continue;
             for (int i = 0; i < 9; i++)
             {
-                var crate = "";
-                switch (i)
-                {
-                    case 0:
-                        crate = lineText.Substring(1, 1);
-                        if (ShouldSaveCrate(crate)) cargoDeck[i].Push(crate);
-                        break;
-                    case 1:
-                        crate = lineText.Substring(5, 1);
-                        if (ShouldSaveCrate(crate)) cargoDeck[i].Push(crate);
-                        break;
-                    case 2:
-                        crate = lineText.Substring(9, 1);
-                        if (ShouldSaveCrate(crate)) cargoDeck[i].Push(crate);
-                        break;
-                    case 3:
-                        crate = lineText.Substring(13, 1);
-                        if (ShouldSaveCrate(crate)) cargoDeck[i].Push(crate);
-                        break;
-                    case 4:
-                        crate = lineText.Substring(17, 1);
-                        if (ShouldSaveCrate(crate)) cargoDeck[i].Push(crate);
-                        break;
-                    case 5:
-                        crate = lineText.Substring(21, 1);
-                        if (ShouldSaveCrate(crate)) cargoDeck[i].Push(crate);
-                        break;
-                    case 6:
-                        crate = lineText.Substring(25, 1);
-                        if (ShouldSaveCrate(crate)) cargoDeck[i].Push(crate);
-                        break;
-                    case 7:
-                        crate = lineText.Substring(29, 1);
-                        if (ShouldSaveCrate(crate)) cargoDeck[i].Push(crate);
-                        break;
-                    case 8:
-                        crate = lineText.Substring(33, 1);
-                        if (ShouldSaveCrate(crate)) cargoDeck[i].Push(crate);
-                        break;
-                }
+                var crate = lineText.Substring(i*4+1, 1);
+                if (ShouldSaveCrate(crate)) cargoDeck[i].Push(crate);
             }
         }
 
